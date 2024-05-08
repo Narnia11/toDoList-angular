@@ -1,0 +1,11 @@
+<div class="container">
+
+    <app-task-item *ngFor="let x of objectsArray" [object]="x" [objectsArray]="objectsArray"></app-task-item>
+  
+</div>
+
+<div class="search">
+  <input #texten>
+
+  <app-button text="Läg Till" [taEmot]="texten" (clicked)="addTask($event)"></app-button>
+</div>
